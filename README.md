@@ -10,5 +10,6 @@
     -   strchr(문자열,문자) :포함 여부 
 
 2.  2021 KAKAO_숫자_문자열과_영단어
+    -   [regex](https://modoocode.com/303)
     -   regex_replace(문자열,regex(패턴),대체할 문자열)
     -   stoi(string) -> string -> int
