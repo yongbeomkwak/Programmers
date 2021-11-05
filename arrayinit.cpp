@@ -1,0 +1,59 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+    int a[4][4];
+    int b[10];
+    fill(b, b + 10, 7);
+    //cout << b[0] << " " << b[9] <<endl;
+
+    /*
+	- 1차원 배열
+
+	fill(arr, arr+10, 5);
+ 
+
+	- 2차원 배열
+
+	fill(&map[0][0], &map[ROW1][COL+1], value)
+ 
+
+	- 백터
+
+	fill (v.begin(), v.end(), 5);
+	*/
+    //fill(&a[0][0],&a[2][2],3);
+    //a[0][0] ~ a[2][1] 까지 3으로 초기화 됨 , 즉
+    // [ROW][COL] 을 2번 째 매개변수에 넣으면
+    // [ROW][COL-1] 까지
+
+    /*for(int i=0;i<4;i++)
+		{
+			for(int j=0;j<4;j++)
+				{
+					cout << a[i][j] << " ";
+				}
+			cout << endl;
+		}
+	*/
+
+    //memset(arr,val,sizeof(arr[0][0])*ROW*COL)
+    memset(a, 0, sizeof(a[0][0]) * 3 * 3);
+    //[0][0] 부터 9개 즉 [2][0] 까지 초기화 됨
+    //[0][0]~ [0][3] 4개
+    //[1][0]~ [1][3] 4개
+    //[2][0] 1개
+
+    /*	for(int i=0;i<4;i++)
+		{
+			for(int j=0;j<4;j++)
+				{
+					cout << a[i][j] << " ";
+				}
+			cout << endl;
+		}
+*/
+
+    return 0;
+}

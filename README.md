@@ -4,6 +4,8 @@
 - [#include <bits/stdc++.h>](https://raeyoungii.github.io/bits-stdc++.h/)
 -  [climits](https://docs.microsoft.com/ko-kr/cpp/c-language/cpp-integer-limits?view=msvc-160)
 
+0.  arrayinit.cpp
+    -   배열 초기화 방법(fill,memset)
 
 1.  2021 KAKAO_신규_이이디_추천
     -   비트연산 이용 대소문자 변호나
