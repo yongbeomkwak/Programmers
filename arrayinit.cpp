@@ -55,5 +55,10 @@ int main()
 		}
 */
 
+	//2차원 벡터
+	vector<vector<int>> dp(size,vector<int>(n+1,0)); //초기값 0으로 n+1(열 개수) size(행개수) [size][n+1] 배열 2차원 벡터
+	//1차원 벡터
+	vector<int> temp(n+1,0) // n+1개를 0으로
+
     return 0;
 }
