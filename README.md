@@ -15,3 +15,6 @@
     -   [regex](https://modoocode.com/303)
     -   regex_replace(문자열,regex(패턴),대체할 문자열)
     -   stoi(string) -> string -> int
+
+3.  2018 KAKAO_비밀지도
+    -   bitset<비트수>(십진수).to_string():해당 십진수를 해당 비트수에 해당되는 이진수로 문자열 리턴
