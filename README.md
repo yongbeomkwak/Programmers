@@ -18,3 +18,7 @@
 
 3.  2018 KAKAO_비밀지도
     -   bitset<비트수>(십진수).to_string():해당 십진수를 해당 비트수에 해당되는 이진수로 문자열 리턴
+
+4.  2018 KAKAO_다트게임1(solution)
+    -   stringstream
+    -   '>>' operator , .get(), .unget()
