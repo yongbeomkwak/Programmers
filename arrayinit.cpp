@@ -21,8 +21,14 @@ int main()
 
 	- 백터
 
+	1 차원
 	fill (v.begin(), v.end(), 5);
 	*/
+	// 2차원 
+	/*
+	fill(mat.begin(), mat.end(), vector<int>(열 개수, 초기화값));
+	*/
+
     //fill(&a[0][0],&a[2][2],3);
     //a[0][0] ~ a[2][1] 까지 3으로 초기화 됨 , 즉
     // [ROW][COL] 을 2번 째 매개변수에 넣으면
