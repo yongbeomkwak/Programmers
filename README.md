@@ -22,3 +22,9 @@
 4.  2018 KAKAO_다트게임1(solution)
     -   stringstream
     -   '>>' operator , .get(), .unget()
+
+5. 2020 KAKAO_문자열 압축
+    -   string.substr(start,count) 
+        -   start index부터 count개 까지 짜른 값을 리턴
+        -   만약 count를 안적고 start만 명시하면 항상 끝까지 자름
+    -   [to_string(str)](https://www.cplusplus.com/reference/string/to_string/): 해당 str을 int로 
