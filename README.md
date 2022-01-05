@@ -42,3 +42,26 @@
 ##  7-2) 2020 KAKAO_괄호변환
 -   괄호 쉽게 뒤집기
 -   string.substr(index,count) or string.substr(index)
+
+## 8.   2018 KAKAO_[1차]뉴스 클러스트링
+-   [대소문자 변환](https://hoho325.tistory.com/314)
+    -   toupper(char) tolower(char)  +=(소) ,-= 32(대)  |=32(소)
+    -   [벡터간 집합연산](https://1coding.tistory.com/124)
+    -   [교집합 차집합 참고](https://unluckyjung.github.io/cpp/2020/04/24/Set_Func/)
+        -   반드시 두 벡터 v1,v2는 정령 후 사용  result는 결과를 담을 벡터
+        - merge(v1.begin(),v1.end(),v2.begin(),v2.end(),result.begin());
+          - merge는 중복 허용 **합집합** 
+        - set_union(v1.begin(),v1.end(),v2.begin(),v2.end(),result.begin());
+          - set_union은 중복 허용 X **합집합**
+
+        -   교집합 set_intersection()
+
+                vector<int> buff(vec1.size() + vec2.size());
+                auto iter = set_intersection(vec1.begin(), vec1.end(), vec2.begin(), vec2.end(), buff.begin());
+                buff.erase(iter, buff.end());
+
+        -   차집합 set_difference()
+
+                vector<int> buff(vec1.size() + vec2.size());
+                auto iter = set_difference(vec1.begin(), vec1.end(), vec2.begin(), vec2.end(), buff.begin());
+                buff.erase(iter, buff.end());
