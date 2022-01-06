@@ -30,7 +30,7 @@
 -   string.substr(start,count) 
     -   start index부터 count개 까지 짜른 값을 리턴
     -   만약 count를 안적고 start만 명시하면 항상 끝까지 자름
--  [to_string(str)](https://www.cplusplus.com/reference/string/to_string/): 해당 str을 int로 
+-  [to_string(type)](https://www.cplusplus.com/reference/string/to_string/): 해당 type(정수형,부동소수점 형)을 string로 
 
 ##  6.  2019 KAKAO_오픈채팅
 -  stringstream
@@ -65,3 +65,10 @@
                 vector<int> buff(vec1.size() + vec2.size());
                 auto iter = set_difference(vec1.begin(), vec1.end(), vec2.begin(), vec2.end(), buff.begin());
                 buff.erase(iter, buff.end());
+
+##  9-1.  2019 KAKAO_튜플Self
+-   [char 숫자인지 확인](https://www.delftstack.com/ko/howto/cpp/how-to-determine-if-a-string-is-number-cpp/)
+    -   isdigit(char c) : true or false  
+- stoi(str): string -> int 
+
+## 9-2  2019 KAKAO_튜플
