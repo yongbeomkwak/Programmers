@@ -66,9 +66,12 @@
                 auto iter = set_difference(vec1.begin(), vec1.end(), vec2.begin(), vec2.end(), buff.begin());
                 buff.erase(iter, buff.end());
 
-##  9-1.  2019 KAKAO_튜플Self
+##  9.  2019 KAKAO_튜플Self
 -   [char 숫자인지 확인](https://www.delftstack.com/ko/howto/cpp/how-to-determine-if-a-string-is-number-cpp/)
     -   isdigit(char c) : true or false  
 - stoi(str): string -> int 
 
-## 9-2  2019 KAKAO_튜플
+## 10-1. 2018 KAKAO_캐쉬Self
+-   transform(str.beign(),str.end(),str.begin(),::toupper)
+    -   transform사용
+    -   해당 문자열 전체를 대문자로
