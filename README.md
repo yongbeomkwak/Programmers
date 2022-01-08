@@ -71,7 +71,11 @@
     -   isdigit(char c) : true or false  
 - stoi(str): string -> int 
 
-## 10-1. 2018 KAKAO_캐쉬Self
+## 10. 2018 KAKAO_캐쉬Self
 -   transform(str.beign(),str.end(),str.begin(),::toupper)
     -   transform사용
     -   해당 문자열 전체를 대문자로
+
+##  11. 2021 KAKAO_메뉴 리뉴얼
+-   DP
+-   백트래킹
