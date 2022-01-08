@@ -79,3 +79,10 @@
 ##  11. 2021 KAKAO_메뉴 리뉴얼
 -   DP
 -   백트래킹
+
+## 12. 2020 KAKAO_수식최대화
+-   next_permutation(v.begin(),v.end()): 오르참순 정렬된 벡터의 모든 순열 
+-   prev_permutation(v.begin(),v.end()): 내리참순 정렬된 벡터의 모든 순열 
+-   do while과 자주 사용된다. 둘다 다음 순열이 있을 시 true리턴 없으면 false리턴
+-   str.c_str(): string -> char *  변환
+-   atoi(char *): char * -> int로 변환
