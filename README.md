@@ -86,3 +86,6 @@
 -   do while과 자주 사용된다. 둘다 다음 순열이 있을 시 true리턴 없으면 false리턴
 -   str.c_str(): string -> char *  변환
 -   atoi(char *): char * -> int로 변환
+
+##  13. 2018 KAKAO_[1차]프렌즈 블록
+-   2x2 블록 제거하여  위 블록 떨어트리는 방법
