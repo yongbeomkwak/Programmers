@@ -95,3 +95,32 @@
 
 ## 15. 2017 KAKAO_카카오 프렌즈 컬러링북
 -   BFS를 이용한 상하좌우 탐색
+
+##  16 2018 KAKAO_[3차]n진수 게임
+-   간단한 진법화(Invert)함수를 사용하여 해당 숫자를 n진수로 나타낼수 있음
+
+
+## 17 2018 KAKAO_[3차]파일명 정렬
+- [문자열 정렬](https://w51014.tistory.com/19)
+  - str.c_str(): string -> char *  변환를 사용하여 매개변수 자리에 넣어준다.
+  - strcmp(char *a,char *b) 
+    - 문자열 비교 함수
+
+  - strcasecmp(char *a,char *b) 
+    - 대소문자를 무시하는 문자열 비교 함수
+  - strncasecmp(char *a,char *b,int n) 
+    - 대소문자를 무시하고, 지정한 길이만큼 문자열을 비교하는 함수
+
+  -   리턴 값 해석
+    > 0보다 작음	
+    >>   string1이 string2보다 작음
+    
+    >  0 
+    >>  string1이 string2와 같음
+    
+    >  0보다 큼	
+    >>  string1이 string2보다 큼
+
+
+
+
