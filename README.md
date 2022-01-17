@@ -23,7 +23,7 @@
 -   bitset<비트수>(십진수).to_string():해당 십진수를 해당 비트수에 해당되는 이진수로 문자열 리턴
 
 ##  4.  2018 KAKAO_다트게임1(solution)
--   stringstream
+-   [stringstream](https://www.cplusplus.com/reference/sstream/stringstream/)
 -   '>>' operator , .get(), .unget()
 
 ##  5. 2020 KAKAO_문자열 압축
@@ -121,11 +121,14 @@
     >  0보다 큼	
     >>  string1이 string2보다 큼
 
-## 18 2018 KAKAO_[3차]방금 그곡
+## 18. 2018 KAKAO_[3차]방금 그곡
 -   str.find("해당문자열"): str에서 해당 문자열 찾기
     -   못찾을 경우 string::npos 반환
     -   찾을 경우 해당 매칭 문자열 첫글자 인덱스 반환
 
 
+##  19. 2021 KAKAO_순위 검색
+-   istringstream 와 >> 를 이용하여 띄어쓰기 기준으로 계속 꺼내기
+-   
 
 
