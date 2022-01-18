@@ -129,6 +129,13 @@
 
 ##  19. 2021 KAKAO_순위 검색
 -   istringstream 와 >> 를 이용하여 띄어쓰기 기준으로 계속 꺼내기
--   
+-   [이진탐색](https://codingwell.tistory.com/50)
+    -   lower 나 upper 모두 사용전 **오름차순 정렬 필수**
+    -   lower_bound(v.begin(),v.end(),key): 해당 위치를 가르키는 Iterator 리턴 
+    -   
+        -   v의 시작 부터 v 끝까지 중 key를 찾음, 만약  key가 없으면 key값 보다 큰 정수중 가장 작은 값의 위치를 찾아냄
 
+    -   upper_bound(v.begin(),v.end().key):해당 위치를 가리크는 Iterator 리턴
+        
+        - key값을 초과하는 첫번 째 원소 위치 리턴
 
