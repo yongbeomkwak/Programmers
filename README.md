@@ -138,4 +138,5 @@
     -   upper_bound(v.begin(),v.end().key):해당 위치를 가리크는 Iterator 리턴
         
         - key값을 초과하는 첫번 째 원소 위치 리턴
-
+##  20. 2021 KAKAO_거리두기 확인하기
+-   BFS
