@@ -143,3 +143,7 @@
 
 ##  21. 2017 KAKAO_ 단체 사진 찍기
 -   모든 경우의 수 (DFS)
+
+##  22. 2022 KAKAO_주차 요금 계산
+-   map의 iterator를 이용하여 key와 value 접근
+-   (*it).first -> key , (*it).second ->value
