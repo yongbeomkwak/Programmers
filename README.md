@@ -151,4 +151,14 @@
 -   (*it).first -> key , (*it).second ->value
 
 ##  23. 2022 KAKAO_k진수에서 소수 개수 구하기
--   
+-   진법 변환 invert 함수
+-   소수 판별 isPrime 함수
+-   해당 char 포인터에서 해당 문자 모든 위치 찾기(strchr(char *,char))
+
+         char *pch = strchr(str, '0'); //'0' 위치를 찾음
+        while(pch!=NULL)
+        {
+
+            pos.push_back(pch-str); //인덱스 
+            pch =strchr(pch+1, '0'); //다음 
+        }
