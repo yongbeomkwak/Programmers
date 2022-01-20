@@ -147,3 +147,6 @@
 ##  22. 2022 KAKAO_주차 요금 계산
 -   map의 iterator를 이용하여 key와 value 접근
 -   (*it).first -> key , (*it).second ->value
+
+##  23. 2022 KAKAO_k진수에서 소수 개수 구하기
+-   
