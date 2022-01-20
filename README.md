@@ -13,6 +13,8 @@
 ##  1.  2021 KAKAO_신규_이이디_추천
 -   비트연산 이용 대소문자 변호나
 -   strchr(문자열,문자) :포함 여부 
+    -    char* strchr (char* str, int c);
+         해당 문자열(str)에 해당 문자 c가 존재하면 해당 존재하는 곳 포인터 없으면 Null
 
 ##  2.  2021 KAKAO_숫자_문자열과_영단어
 -   [regex](https://modoocode.com/303)
