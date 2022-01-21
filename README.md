@@ -162,3 +162,6 @@
             pos.push_back(pch-str); //인덱스 
             pch =strchr(pch+1, '0'); //다음 
         }
+
+##  24. 2022 KAKAO_양궁대회
+-   
