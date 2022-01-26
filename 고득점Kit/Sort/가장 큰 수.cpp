@@ -31,14 +31,12 @@ string solution(vector<int> numbers)
     init(tmp, numbers);
     sort(tmp.begin(), tmp.end(), cmp);
 
-    // print(tmp);
-
     for (const string &s : tmp)
     {
         answer += s;
     }
-    if (answer[0] == '0')
-        return 0; //가장 앞이 0이면 뒤에값 상관없이 0
+    if (answer[0] == '0' || answer.empty())
+        return "0"; //가장 앞이 0이면 뒤에값 상관없이 0
 
     return answer;
 }
