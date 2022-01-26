@@ -4,6 +4,7 @@
         "string_view": "cpp",
         "iosfwd": "cpp",
         "__split_buffer": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "iterator": "cpp"
     }
 }
