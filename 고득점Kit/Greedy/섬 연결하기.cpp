@@ -3,21 +3,14 @@
 using namespace std;
 
 typedef pair<int,int> p;
+#define INF 987654321
 
-int solution(int n, vector<vector<int>> costs) {
-    int answer = 0;
-    vector<vector<p>> graph(costs.size());
-    vector<bool> visit(costs.size(),false);
-    for(int i=0;i<costs.size();i++)
-    {
-        int start=costs[i][0];
-        int dest=costs[i][1];
-        int dist=costs[i][2];
-        graph[start].push_back({dist,dest});
-    }
-    
-    priority_queue<p,vector<p>,greater<p>> pq;
-    pq.push({0,0});
+int prim(const int start,vector<vector<p>>& graph)
+{
+    vector<bool> visit(graph.size(),false);
+     priority_queue<p,vector<p>,greater<p>> pq;
+    pq.push({start,0});
+    int ret=0;
     
     while(!pq.empty())
     {
@@ -29,8 +22,8 @@ int solution(int n, vector<vector<int>> costs) {
         if(visit[dept]) continue;
       
         visit[dept]=1;
-        answer +=dist;
-        cout << dept << " "<<dist << " " <<answer << endl;
+        ret +=dist;
+
         for(int i=0;i<graph[dept].size();i++)
         {
                int dest=graph[dept][i].second;
@@ -40,6 +33,27 @@ int solution(int n, vector<vector<int>> costs) {
                 
         }
         
+    }
+   // cout << start << " " << ret <<endl;
+    return ret;
+}
+
+int solution(int n, vector<vector<int>> costs) {
+    int answer = INF;
+    vector<vector<p>> graph(n);
+    
+    for(int i=0;i<costs.size();i++)
+    {
+        int start=costs[i][0];
+        int dest=costs[i][1];
+        int dist=costs[i][2];
+        graph[start].push_back({dist,dest});
+        graph[dest].push_back({dist,start});
+    }
+    
+    for(int i=0;i<n;i++) //모든 섬을 출발로 prim 알고리즘 돌림
+    {
+        answer=min(answer,prim(i,graph));
     }
     
     
