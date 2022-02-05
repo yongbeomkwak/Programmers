@@ -77,6 +77,13 @@
 -   transform(str.beign(),str.end(),str.begin(),::toupper)
     -   transform사용
     -   해당 문자열 전체를 대문자로
+          
+            transform(
+             입력한 변수의 first 위치, 
+             입력한 변수의 last 위치까지, 
+             저장할 변수의 first 위치, 
+             변환할 방법이 있는 함수
+            ); 
 
 ##  11. 2021 KAKAO_메뉴 리뉴얼
 -   DP
