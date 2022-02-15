@@ -5,6 +5,8 @@
         "iosfwd": "cpp",
         "__split_buffer": "cpp",
         "vector": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "algorithm": "cpp",
+        "memory": "cpp"
     }
 }
