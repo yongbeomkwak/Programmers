@@ -16,7 +16,7 @@ int main()
 
 	- 2차원 배열
 
-	fill(&map[0][0], &map[ROW1][COL+1], value)
+	fill(&map[0][0], &map[MAX-1][MAX], value)
  
 
 	- 백터
