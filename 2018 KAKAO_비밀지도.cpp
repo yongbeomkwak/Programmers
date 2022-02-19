@@ -13,6 +13,7 @@ vector<string> solution(int n, vector<int> arr1, vector<int> arr2) {
     for(int i=0;i<n;i++)
     {
         //MAX=16 bitset<MAX>(십진수).to_string() -> MAX비트 로 해당 십진수를 이진수로 변경 후 문자열 리턴 ,현재는 16비트로 
+        //bitset<비트수>(십진수).to_string()
         map1.push_back(bitset<MAX>(arr1[i]).to_string());
         map2.push_back(bitset<MAX>(arr2[i]).to_string());
     }
