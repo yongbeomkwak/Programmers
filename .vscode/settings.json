@@ -9,6 +9,7 @@
         "algorithm": "cpp",
         "memory": "cpp",
         "chrono": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "*.cp": "cpp"
     }
 }
