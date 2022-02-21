@@ -44,8 +44,8 @@ int main()
 		}
 	*/
 
-    //memset(arr,val,sizeof(arr[0][0])*ROW*COL)
-    memset(a, 0, sizeof(a[0][0]) * 3 * 3);
+    //memset(arr,val,sizeof(arr))
+    memset(a, 0, sizeof(a));
     //[0][0] 부터 9개 즉 [2][0] 까지 초기화 됨
     //[0][0]~ [0][3] 4개
     //[1][0]~ [1][3] 4개
