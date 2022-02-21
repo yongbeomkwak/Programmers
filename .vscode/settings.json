@@ -7,6 +7,8 @@
         "vector": "cpp",
         "iterator": "cpp",
         "algorithm": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "chrono": "cpp",
+        "limits": "cpp"
     }
 }
