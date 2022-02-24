@@ -13,3 +13,7 @@
   - vector 와 string 앞과 뒤 원소 접근
     - v.front(), str.front()
     - v.back(), str.back()
+-   점프와 순간 이동
+    -   2의 제곱 판단
+    - 해당 n과 n-1을 &연산한다   
+    ![2의제곱](two.png)
