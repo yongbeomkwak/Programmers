@@ -42,7 +42,7 @@ vector<int> solution(int n, long long k)
         now %= slice; //앞에 숫자를 지정하고 나면 그 수 앞수들의 조합을 제거 해준다.
         // ex) 1 x x x 면  x x x 부분을 구할 때 1은 사용 되면 안되므로
         if (now == 0)
-            now = slice;
+            now = slice; //나눠질 경우 가장 해당 도막의 가장 끝 값이므로 그대로 전달
     }
 
     return answer;
