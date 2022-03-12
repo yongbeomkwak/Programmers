@@ -10,6 +10,11 @@
         "memory": "cpp",
         "chrono": "cpp",
         "limits": "cpp",
-        "*.cp": "cpp"
+        "*.cp": "cpp",
+        "__bit_reference": "cpp",
+        "__hash_table": "cpp",
+        "array": "cpp",
+        "initializer_list": "cpp",
+        "unordered_map": "cpp"
     }
 }
