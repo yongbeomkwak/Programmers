@@ -91,8 +91,6 @@ vector<int> solution(int rows, int columns, vector<vector<int>> queries) {
     vvi matrix=init(rows,columns);
     //print(matrix);
     global_matrix=matrix;
-    matrix[0][0]=3;
-    cout  << matrix[0][0] << " "<< global_matrix[0][0] <<endl;
     for(vector<int>& query:queries)
     {
         const int r1=query[0];
