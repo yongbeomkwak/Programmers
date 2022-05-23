@@ -2,35 +2,39 @@
 
 using namespace std;
 
+#define P pair<int, int>
+
 int solution(int bridge_length, int weight, vector<int> truck_weights)
 {
-    int answer = 1;
-
-    queue<pair<int, int> > q; // first:담은 트럭의 무게,종료시간
-    int next_truck = 0;       //다음 트럭을 가르킬 인덱스
-    int now_weight = 0;       //현재 다리가 견디는 무게
-
-    int _time = 0;                                               //시간
-    while (next_truck < truck_weights.size() || now_weight != 0) //만약 더이상 가르킬 트럭이 범위를 넘었거나 견디는 무게가 0이 되면 멈춤
+    int answer = 0;
+    queue<int> q;
+    queue<P> q1;                                   //종료시간,트럭무게 저장 큐
+    for (int i = 0; i < truck_weights.size(); i++) //무게 저장 큐
     {
-        _time++; //시간 증가
-        if (!q.empty() && q.front().second == _time)
-        //큐가 비어있지 않거나 , 가장 앞 트럭의 종료시간이 도달 했을경우
-        {
+        q.push(truck_weights[i]);
+    }
+    int curr_weight = 0; //현재 다리무게
 
-            now_weight -= q.front().first; //하중무게에서 해당 트럭 무게를 빼준 후
-            q.pop();                       //제거
+    while (!q.empty() || !q1.empty()) //두 큐가 모두 비어야 종료
+    {
+        answer++; // 초 증가
+
+        //삭제
+        while (!q1.empty() && answer == q1.front().first) //만약 q1이 비어있지 않고 answer(해당시간)==큐 가장 앞 종료시간과 같으면 빼야함
+        {
+            curr_weight -= q1.front().second; //다리 무게 감소
+            q1.pop();                         //출력
         }
 
-        //해당 큐가 허용 수의 트럭보다 적게 건너고 있고 현재무게 + 다음 트럭 무게가 허용 중량을 넘지 않고 다음 트럭이 트럭 벡터 범위를 넘지 않았을 때
-        if (q.size() < bridge_length && (now_weight + truck_weights[next_truck]) <= weight && next_truck < truck_weights.size())
+        //삽입
+        //건너가야할 트럭이 남이있고 해당 다리무게 + 현재 트럭 무게 합이 제한보다 작거나 같으면 건널 수 있음
+        if (!q.empty() && curr_weight + q.front() <= weight)
         {
-            //큐에 해당 트럭의 무게와 종료 시간을 넣어주고
-            // 하중을 해당 트럭만큼늘려준다. 이때 트럭인덱스도 이동
-            q.push({truck_weights[next_truck], _time + bridge_length});
-            now_weight += truck_weights[next_truck++];
+            q1.push({answer + bridge_length, q.front()}); //종료시간,트럭무게 삽입
+            curr_weight += q.front();                     //다리무게 증가
+            q.pop();
         }
     }
 
-    return answer = _time;
+    return answer;
 }
