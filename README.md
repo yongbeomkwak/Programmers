@@ -80,9 +80,10 @@
 - stoi(str): string -> int 
 
 ## 10. 2018 KAKAO_캐쉬Self
--   transform(str.beign(),str.end(),str.begin(),::toupper)
+-   transform(str.begin(),str.end(),str.begin(),::toupper)
     -   transform사용
     -   해당 문자열 전체를 대문자로
+    -   해당 문자열 전채를  소문자로(::tolower)
           
             transform(
              입력한 변수의 first 위치, 
