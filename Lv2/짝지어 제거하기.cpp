@@ -5,7 +5,7 @@ using namespace std;
 int solution(string s)
 {
     int answer = -1;
-    stack<char> st=stack<char>();
+    stack<char> st=stack<char>(); //스택 이용 
     
     
     for(const char& c:s)
