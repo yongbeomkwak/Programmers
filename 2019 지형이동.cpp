@@ -16,7 +16,7 @@ struct cmp
 using namespace std;
 #define MAX 301
 int y_move[4] = {1, -1, 0, 0}; //상 하 x x
-int x_move[4] = {0, 0, -1, 1}; // x  x 좌 우
+int x_move[4] = {0, 0, -1, 1}; //  x 좌 우
 int _visit[MAX][MAX];          //방문 확인
 
 int solution(vector<vector<int> > land, int height)
