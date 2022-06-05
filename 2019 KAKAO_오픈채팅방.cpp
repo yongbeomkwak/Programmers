@@ -38,7 +38,7 @@ vector<string> solution(vector<string> record)
             state.push_back("나갔습니다."); // Leave State 삽입
         }
     }
-
+    //최종 출력
     for (int i = 0; i < answer.size(); i++)
     {
         answer[i] = userInfo[answer[i]] + "님이 " + state[i]; // answer에 저장된 id를 닉네임으로 바꾼후 +"님이 " +해당 상태
