@@ -10,10 +10,12 @@
 2.  StringStream.cpp
     - 문자열 다루는 기본 스킬 
 
-3.  벡터 최소값 최댓값
-
+3.  벡터 최소값 최댓값 ,최대합 
+~~~c++
         int smallest_element = *min_element(v.begin(),v.end());
           int largest_element  = *max_element(v.begin(),v.end());
+        int sum=accumulate(v.begin(),v.end(),0); // 0은 초기값 , int 범위를 넘어가면 쓰레기값이 들어가니 주의
+~~~
 
   
 ##  1.  2021 KAKAO_신규_이이디_추천
