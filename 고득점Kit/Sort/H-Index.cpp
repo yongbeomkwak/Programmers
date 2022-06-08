@@ -40,5 +40,4 @@ int solution(vector<int> citations)
     }
     return answer;
 
-    return answer;
 }
