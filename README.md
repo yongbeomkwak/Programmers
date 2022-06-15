@@ -16,7 +16,7 @@
           int largest_element  = *max_element(v.begin(),v.end());
         int sum=accumulate(v.begin(),v.end(),0); // 0은 초기값 , int 범위를 넘어가면 쓰레기값이 들어가니 주의
 ~~~
-4.  builtin.cpp
+4.  [builtin.cpp](http://www.secmem.org/blog/2019/10/19/handy-function-about-bit/)
     - (32비트)기준 1과 0 개수 카운팅
 ~~~c++
 int num1=__builtin_popcount(x)// 1의 개수
