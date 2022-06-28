@@ -5,6 +5,9 @@
 -  [climits](https://docs.microsoft.com/ko-kr/cpp/c-language/cpp-integer-limits?view=msvc-160)
 
 ##  0.  Base
+
+0. cpp_kor_utf.cpp
+  - 한글 문자 자르기
 1.  arrayinit.cpp
     -   배열 초기화 방법(fill,memset)
 2.  StringStream.cpp
